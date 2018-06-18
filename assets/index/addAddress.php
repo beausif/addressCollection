@@ -58,7 +58,7 @@ if(isset($_POST['addressOneFinal'])) {
         $db->beginTransaction();
 
         $rebateId = $db->queryDatabase("
-            INSERT INTO addressCollection.address
+            INSERT INTO addresscollection.address
             ( dateAdded,  address1, address2, city, state, zip5, zip4 ) 
             VALUES ( CURRENT_TIMESTAMP, :address1, :address2, :city, :state, :zip5, :zip4 );",
             [
@@ -85,7 +85,7 @@ if(isset($_POST['addressOneFinal'])) {
             $db->rollbackTransaction();
         }
 
-        $db->logError($ex->getMessage(), 'addressCollection');
+        $db->logError($ex->getMessage(), 'addresscollection');
     }
 
 }

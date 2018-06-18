@@ -88,7 +88,7 @@ try {
             city,
             state,
             IF(zip4 IS NULL, zip5, CONCAT(zip5, '-', zip4)) AS zip
-       FROM addressCollection.address
+       FROM addresscollection.address
           $where
           $order
           $limit", $bindings);
@@ -96,14 +96,14 @@ try {
     // Data set length after filtering
     $resFilterLength = $db->queryDatabase(
         "SELECT COUNT(*) AS count
-           FROM addressCollection.address
+           FROM addresscollection.address
           $where
           $limit", $bindings);
 
     // Total data set length
     $resTotalLength = $db->queryDatabase(
         "SELECT COUNT(*) AS count
-           FROM addressCollection.address");
+           FROM addresscollection.address");
 
     foreach ($data as $key=>$address) {
         $data[$key]['dateAdded'] = (new DateTime($address['dateAdded']))->format('m/d/Y h:i:s A');

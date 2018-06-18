@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 define('DATABASE_INI', dirname(__DIR__) . '/datab.ini');
 define('DATABASE_INI_SECTION', 'addressCollection');
-define('DATABASE_NAME', 'addressCollection');
+define('DATABASE_NAME', 'addresscollection');
 
 define('WEB_ROOT', dirname(dirname(dirname(__DIR__))) . '/html');
 define('ASSETS_DIR', __DIR__);

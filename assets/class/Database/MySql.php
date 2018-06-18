@@ -143,7 +143,7 @@ class MySql extends Database
      */
     public function logError(string $error, string $database): void
     {
-        $stmt = $this->connection->prepare("INSERT INTO " . $database . ".errorLog(dateAdded, error) VALUES(CURRENT_TIMESTAMP, :error)");
+        $stmt = $this->connection->prepare("INSERT INTO " . $database . ".errorlog(dateAdded, error) VALUES(CURRENT_TIMESTAMP, :error)");
         $stmt->execute([":error" => $error]);
     }
 
