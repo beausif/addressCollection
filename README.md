@@ -1,7 +1,7 @@
 # addressCollection
 Address Collection Example Project
 
-###Requirements:
+### Requirements:
 
 - PHP 7.2+
 - PHP Extensions
@@ -10,14 +10,14 @@ Address Collection Example Project
 
 
 
-###Instructions:
+### Instructions:
 
 1. Set html directory as web root
 2. Run createSchema.sql to build database and tables
 2. Update database credentials in datab.ini
 
 
-###Optional:
+### Optional:
 
 1. Run "npm install" from repo root
 2. Run "composer install" from repo root
@@ -25,7 +25,7 @@ Address Collection Example Project
 4. Run "grunt" from repo root
    1. This will concat, uglify, and minify, and move the required JS/CSS files installed via npm install.
 
-###Notes
+### Notes
 - datab.ini should normally be stored outside the project directory
 - USPS key should normally be stored in the database
 
