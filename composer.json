@@ -1,0 +1,17 @@
+{
+  "name": "addresscollection",
+  "description": "Rare Bird Assessment Project - Address Web Form Collection",
+  "minimum-stability": "stable",
+  "license": "ISC",
+  "authors": [
+    {
+      "name": "Eugene Quilter",
+      "email": "eugenequilter@gmail.com"
+    }
+  ],
+  "autoload":{
+    "psr-0":{
+      "": "assets/class/"
+    }
+  }
+}
