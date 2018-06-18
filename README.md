@@ -7,12 +7,13 @@ Address Collection Example Project
 - PHP Extensions
   - php_curl
   - pdo_mysql
+- MySQL
 
 ### Instructions:
 
 1. Set html directory as web root
 2. Run createSchema.sql to build database and tables
-2. Update database credentials in datab.ini
+2. Update database credentials/host in datab.ini
 
 
 ### Optional:

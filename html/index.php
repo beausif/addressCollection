@@ -121,6 +121,7 @@ require_once PARTIALS_DIR . '/alerts.php';
                             <input type="hidden" id="zipUsps" name="zipFinal" value="">
                             <input type="submit" id="addressFoundSubmit" class="btn btn-primary mt-3" value="Add USPS">
                         </form>
+                        <hr class="col-12 d-md-none p-0">
                         <form class="col-12 col-md-6 border-left" method="POST">
                             <h6>Typed Address:</h6>
                             <div id="fullAddressOriginal"></div>
