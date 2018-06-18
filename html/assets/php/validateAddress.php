@@ -29,7 +29,7 @@ try {
     }
 
     if(is_null($zip)){
-        $invalidElements[] = [ "element" => "#zip", "message" => "Zip Required" ];
+        $invalidElements[] = [ "element" => "#zip", "message" => "Invalid Zip: Format As xxxxx OR xxxxx-xxxx" ];
     }
 
     if(!empty($invalidElements)){

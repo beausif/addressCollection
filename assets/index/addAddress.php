@@ -41,18 +41,18 @@ if(isset($_POST['addressOneFinal'])) {
         $zipParts = explode('-', $zipFinal);
 
         if(count($zipParts) !== 2 && count($zipParts) !== 1){
-            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxxB");
+            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxx");
         }
 
         $zip5Final = $zipParts[0];
         $zip4Final = isset($zipParts[1]) ? $zipParts[1] : null;
 
         if(strlen($zip5Final) !== 5){
-            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxxC");
+            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxx");
         }
 
         if(!is_null($zip4Final) && strlen($zip4Final) !== 4){
-            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxxD");
+            throw new Exception("Invalid Zip: Format As xxxxx OR xxxxx-xxxx");
         }
 
         $db->beginTransaction();

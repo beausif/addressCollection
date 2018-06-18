@@ -4,6 +4,7 @@ declare(strict_types=1);
 require_once dirname(__DIR__) . '/assets/assets.php';
 require_once ASSETS_DIR . '/index/addAddress.php';
 require_once PARTIALS_DIR . '/header.php';
+require_once PARTIALS_DIR . '/alerts.php';
 
 ?>
 
