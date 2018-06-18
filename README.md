@@ -8,8 +8,6 @@ Address Collection Example Project
   - php_curl
   - pdo_mysql
 
-
-
 ### Instructions:
 
 1. Set html directory as web root
